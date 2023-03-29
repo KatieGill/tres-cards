@@ -3,7 +3,7 @@
   height: 500px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat( auto-fit, minmax( 300px, 300px) );
   grid-gap: 20px;
   justify-content: center;
   align-content: center;
@@ -17,10 +17,11 @@
   height: 150px;
   border: 1px solid lightgray;
   border-radius: 5px;
+  box-shadow: 3px 5px 10px #888888;
 }
 
 .card:hover {
-  background-color: lightgrey;
+  background-color: #f7f3fc;
 }
 
 .icon {
@@ -45,6 +46,7 @@ p {
   display: flex;
   align-items: center;
   margin: 10px 0;
+  height: 90px;
 }
 
 .card-link {
